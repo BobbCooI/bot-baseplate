@@ -21,7 +21,7 @@ exports.handle = async function(message) {
     run
   } = command;
   // A command has been ran
-  console.log("[INFO] A command has been ran:", triggers[0]);
+  console.log(`[INFO] A command has been ran by [${message.author.id}: ${message.author.tag}]: ${triggers[0]}`);
   if (inDB) {
   }
   // Ensure the user has the required roles
