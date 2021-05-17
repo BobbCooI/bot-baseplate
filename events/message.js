@@ -4,7 +4,7 @@ const prefix = "c!";
 exports.handle = async function(message) {
   if (message.author.bot) return;
   if (message.channel.type.toLowerCase() === "dm") return;
-  if (message.author.id !== process.env.oID) return;
+  if (message.author.id !== process.env.oID) return;  // To allow only one user to use the bot. Remember to add oID variable in the .env
 
   //   const command = `${prefix}${alias.toLowerCase()}`;
   let [command, ...args] = message.content.slice(prefix.length).split(/ +/g);

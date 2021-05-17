@@ -7,7 +7,7 @@ const helmet = require('helmet');
 const Bot = require('./bot.js');
 const cors = require('cors');
 /** For the bot itself V */
-swient.login(process.env.token);
+swient.login(process.env.token); // Remember to have a token variable in the .env.
 let Swolly = new Bot(swient);
 (async() => {await Swolly.deploy()})();
 /** For the bot iself ^ */
